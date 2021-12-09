@@ -1,16 +1,13 @@
 import React from 'react'
 import styled from "styled-components";
-// import NavBar from '../NavBar/NavBar';
 
 import backgroundWave from '../../assets/images/wave.svg';
 
 function Header() {
   return (
-    <div>
-      <Wrapper>
-        <Title>MERGULHE NO SEU <br/> NEGÓCIO, FAÇA-O <br /> CRESCER.</Title>
-      </Wrapper>
-    </div>
+    <Wrapper>
+      <Title>MERGULHE NO SEU <br/> NEGÓCIO, FAÇA-O <br /> CRESCER.</Title>
+    </Wrapper>
   )
 }
 

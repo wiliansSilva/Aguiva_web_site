@@ -5,16 +5,15 @@ import logoImg from '../../assets/images/aguiva_tipography.svg';
 
 function NavBar() {
   return (
-    <div>
-      <Wrapper>
-        {/* <Logo /> */}
-        <img src={logoImg} alt="Aguiva" width="150px" />
-      
-        {/* <Burger>
-          <h1>Burger</h1>
-        </Burger> */}
-      </Wrapper>
-    </div>
+    <Wrapper>
+      {/* <Logo /> */}
+      <img src={logoImg} alt="Aguiva" width="150px" />
+     
+      {/* <Burger>
+        <h1>Burger</h1>
+      </Burger> */}
+    </Wrapper>
+    
   )
 };
 

@@ -18,7 +18,7 @@ function Question() {
 }
 
 const Background = styled.div`
-  height: 60vh;
+  height: 70vh;
   background-color: #010f40;
   overflow: hidden;
 
