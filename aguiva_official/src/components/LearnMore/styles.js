@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   color: ${props => props.color};
-  max-width: 50vw;
+  /* max-width: 50vw; */
   margin-left: 60px;
+  margin-right: 60px;
+  text-align: ${props => props.side};
 `;
 
 export const Title = styled.h2`
@@ -19,4 +21,5 @@ export const Description = styled.p`
 
 export const Link = styled.a`
   font-size: 1.3rem;
+  
 `;

@@ -3,6 +3,8 @@ import NavBar from "./components/NavBar/NavBar";
 import Header from "./components/Header/Header.js";
 import Question from "./components/Question/Question";
 import VisualId from "./components/VisualId/VisualId";
+import Systems from "./components/Systems/Systems";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Header />
       <Question />
       <VisualId />
+      <Systems />
+      <Footer />
     </div>
   );
 }

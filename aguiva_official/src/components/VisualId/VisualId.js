@@ -52,7 +52,7 @@ const Background = styled.div`
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: contrast(100%)
+  /* filter: brightness(100%); */
 `;
 
 const Main = styled.main`
@@ -88,13 +88,12 @@ const Container = styled.div`
 `;
 
 const Partners = styled.div`
-  flex: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 1rem;
 
-  margin-left: 150px;
-  margin-top: 30px;
+  /* margin-left: 150px; */
+  /* margin-top: 30px; */
   
 `;
 
