@@ -4,6 +4,12 @@ import LearnMore from '../LearnMore/LearnMore';
 
 import BackgroundJellyfish from '../../assets/images/Background-Design.svg';
 import JellyfishGray from '../../assets/images/aguaviva-design.svg';
+import ChicagoLogo from '../../assets/images/Chicago-logo.svg';
+import CaldeiraLogo from '../../assets/images/Caldeira-logo.svg';
+import MutuaLogo from '../../assets/images/Mutua-logo.svg';
+import SkemLogo from '../../assets/images/Skem-logo.svg';
+import WilliamLogo from '../../assets/images/William-logo.svg';
+import RaquelLogo from '../../assets/images/Raquel-logo.svg';
 
 function VisualId() {
   return (
@@ -24,8 +30,16 @@ function VisualId() {
           e de ser aplicada. porém, não é somente a logo que identifica uma 
           empresa para o cliente. Ter uma identidade visual estratégica faz 
           toda a diferença para se posicionar corretamente no mercado e conviver com concorrentes."
+          link="#"
         />
-        <Partners />
+        <Partners>
+          <img src={ChicagoLogo} alt='Chicago' />
+          <img src={CaldeiraLogo} alt='Gilberto Caldeira Advogado' />
+          <img src={MutuaLogo} alt='Mutua' />
+          <img src={SkemLogo} alt='Skem' />
+          <img src={WilliamLogo} alt='William Viegas' />
+          <img src={RaquelLogo} alt='Raquel Krause' />
+        </Partners>
       </Container>
     </Background>
   )
@@ -38,32 +52,30 @@ const Background = styled.div`
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-
+  filter: contrast(100%)
 `;
 
 const Main = styled.main`
   height: 50vh;
   display: flex;
-  /* /* flex-direction: column; */
-  flex: 1;
   align-items: center;
   justify-content: center;
 
 `;
 
 const Paragraph = styled.p`
-  font-size: 1.5rem;
-  font-weight: 500;
+  width: 60vw;
+  margin-left: 150px;
+  font-size: 1.8rem;
+  font-weight: 600;
   color: #1e304e;
-
-  padding-left: 4rem;
+  
 `; 
 
 const JellyfishImg = styled.div`
-  width: 210px;
-  height: 210px;
-  position: relative;
-  right: 0px;
+  flex: 1;
+  height: 95%;
+  margin-right: 95px;
 
   background-image: url(${JellyfishGray});
   background-size: cover;
@@ -76,7 +88,16 @@ const Container = styled.div`
 `;
 
 const Partners = styled.div`
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1rem;
 
+  margin-left: 150px;
+  margin-top: 30px;
+  
 `;
+
+
 
 export default VisualId;

@@ -1,35 +1,18 @@
-import React from 'react'
-import styled from 'styled-components';
+import React from 'react';
+import { Wrapper, Title, Description, Link } from './styles';
 
 function LearnMore(props) {
+  const { color, title, description, link } = props;
+
   return (
-    <Wrapper color={props.color}>
-      <Title>{props.title}</Title>
+    <Wrapper color={color}>
+      <Title>{title}</Title>
       <Description>
-        {props.description}
+        {description}
       </Description>
-      <Link>Saiba mais</Link>
+      <Link href={link}>Saiba mais</Link>
     </Wrapper>
   )
 }
-
-const Wrapper = styled.div`
-  color: ${props => props.color};
-`;
-
-const Title = styled.h2`
-  font-size: 1.7rem;
-  font-weight: bold;
-  text-transform: uppercase;
-`;
-
-const Description = styled.p`
-  font-size: 1.2rem;
-  font-weight: 500;
-`;
-
-const Link = styled.a`
-  font-size: 1.3rem;
-`;
 
 export default LearnMore;
