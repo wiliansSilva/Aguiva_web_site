@@ -10,8 +10,8 @@ function Footer() {
 };
 
 const Background = styled.div`
-  height: 30vh;
-  background: #fff;
+  height: 25vh;
+  background: #cab710;
 `;
 
 export default Footer;

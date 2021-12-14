@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-  color: ${props => props.color};
-  /* max-width: 50vw; */
+export const Wrapper = styled.div(props =>`
+  color: ${props.color};
+  width: 50vw; 
   margin-left: 60px;
   margin-right: 60px;
-  text-align: ${props => props.side};
-`;
+  text-align: ${props.side};
+`);
 
-export const Title = styled.h2`
+export const Title = styled.h1`
   font-size: 1.7rem;
   font-weight: bold;
+
   text-transform: uppercase;
 `;
 

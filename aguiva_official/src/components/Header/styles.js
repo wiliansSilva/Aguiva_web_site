@@ -8,13 +8,25 @@ export const Wrapper = styled.div`
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (max-width: 1024px) {
+    height: 40vh;
+  }
 `;
 
 export const Title = styled.h1`
-  margin-top: 180px;
-  margin-left: 140px;
-  
+  height: 80%;
+  margin-left: 12%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
   color: #ffffff;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 3.7rem;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    font-size: 3rem;
+  }
 `;

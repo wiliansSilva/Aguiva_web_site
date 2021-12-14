@@ -6,11 +6,18 @@ const GlobalStyle = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: "Inter", sans-serif;
   }
 
   a{
     text-decoration: none;
+  }
+
+  @media screen and (max-width: 1024px) {
+    html, body {
+      font-size: 10px;
+    }
   }
 `;
 

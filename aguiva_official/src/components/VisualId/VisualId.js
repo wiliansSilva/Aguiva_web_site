@@ -1,9 +1,7 @@
 import React from 'react'
-import styled from 'styled-components';
 import LearnMore from '../LearnMore/LearnMore';
+import { Background, Main, Paragraph, JellyfishImg, Container, Partners } from './styles';
 
-import BackgroundJellyfish from '../../assets/images/Background-Design.svg';
-import JellyfishGray from '../../assets/images/aguaviva-design.svg';
 import ChicagoLogo from '../../assets/images/Chicago-logo.svg';
 import CaldeiraLogo from '../../assets/images/Caldeira-logo.svg';
 import MutuaLogo from '../../assets/images/Mutua-logo.svg';
@@ -44,59 +42,6 @@ function VisualId() {
     </Background>
   )
 }
-
-const Background = styled.div`
-  width: 100%;
-  height: 100vh;
-  background-image: url(${BackgroundJellyfish});
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* filter: brightness(100%); */
-`;
-
-const Main = styled.main`
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-`;
-
-const Paragraph = styled.p`
-  width: 60vw;
-  margin-left: 150px;
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #1e304e;
-  
-`; 
-
-const JellyfishImg = styled.div`
-  flex: 1;
-  height: 95%;
-  margin-right: 95px;
-
-  background-image: url(${JellyfishGray});
-  background-size: cover;
-`;
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-`;
-
-const Partners = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-row-gap: 1rem;
-
-  /* margin-left: 150px; */
-  /* margin-top: 30px; */
-  
-`;
-
 
 
 export default VisualId;
