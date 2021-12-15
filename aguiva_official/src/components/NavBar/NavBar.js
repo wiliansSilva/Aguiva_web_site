@@ -20,7 +20,6 @@ function NavBar() {
 
 const Wrapper = styled.nav`
   height: 5vh;
-  width: 100%;
   background-color: #010f40;
   padding: 0.5rem 0 0.6rem 1.2rem;
 

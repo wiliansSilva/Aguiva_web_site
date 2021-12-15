@@ -10,6 +10,12 @@ export const Background = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  @media screen and (max-width: 1024px) {
+    height: 40vh;
+    background-color: #182451;
+
+  }
 `;
 
 export const Title = styled.h2`
@@ -17,6 +23,9 @@ export const Title = styled.h2`
   font-size: 2rem;
   z-index: 10;
 
+  @media screen and (max-width: 1024px) {
+    font-size: 2.5rem;
+  }
 `;
 
 export const YellowBar = styled.div`
@@ -27,16 +36,29 @@ export const YellowBar = styled.div`
   left: 8px;
   background-color: #cab710;
   z-index: 1;
+
+  @media screen and (max-width: 1024px) {
+    width: 150px;
+    height: 20px;
+    top: -70px;
+  }
 `;
 
 export const Button = styled.button`
+  width: 120px;
+  padding: 1rem;
   background-color: #182451;
   color: #ffffff;
-  border: 0.5px solid #000;
+  border: 0.1px solid #1d1f29;
   font-size: 2rem;
   font-weight: bold;
-
-  width: 100px;
-  padding-top: 0.3rem;
+  align-items: center;
   cursor: pointer;
+
+  &:hover {
+    /* background-color: #273a81; */
+    background-color: #cab710;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
 `;

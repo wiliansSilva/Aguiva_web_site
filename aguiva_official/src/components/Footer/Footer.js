@@ -11,7 +11,7 @@ function Footer() {
 
 const Background = styled.div`
   height: 25vh;
-  background: #cab710;
+  background: #fff;
 `;
 
 export default Footer;

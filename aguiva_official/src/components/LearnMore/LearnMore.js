@@ -6,7 +6,7 @@ function LearnMore(props) {
 
   return (
     <Wrapper color={color} side={side}>
-      <Title>{title}</Title>
+      {title && <Title>{title}</Title>}
       <Description>
         {description}
       </Description>

@@ -1,26 +1,42 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div(props =>`
-  color: ${props.color};
+export const Wrapper = styled.div `
+  color: ${props => props.color};
   width: 50vw; 
   margin-left: 60px;
   margin-right: 60px;
-  text-align: ${props.side};
-`);
+  text-align: ${props => props.side};
+
+  @media screen and (max-width: 1024px) {
+    margin: 5%;
+    width: 90vw;
+    text-align: left;
+  } 
+`;
 
 export const Title = styled.h1`
   font-size: 1.7rem;
   font-weight: bold;
-
   text-transform: uppercase;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 3rem;
+  }
 `;
 
 export const Description = styled.p`
   font-size: 1.2rem;
   font-weight: 500;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const Link = styled.a`
   font-size: 1.3rem;
   
+  @media screen and (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
 `;

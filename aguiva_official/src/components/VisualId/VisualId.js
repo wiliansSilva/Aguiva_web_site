@@ -1,6 +1,6 @@
 import React from 'react'
 import LearnMore from '../LearnMore/LearnMore';
-import { Background, Main, Paragraph, JellyfishImg, Container, Partners } from './styles';
+import { Background, Main, Title, JellyfishImg, Container, TitleLearnMore, Partners } from './styles';
 
 import ChicagoLogo from '../../assets/images/Chicago-logo.svg';
 import CaldeiraLogo from '../../assets/images/Caldeira-logo.svg';
@@ -13,17 +13,18 @@ function VisualId() {
   return (
     <Background>
       <Main>
-        <Paragraph>
+        <Title>
           Queremos te apresentar alguns dos nossos serviços 
           que podem te auxiliar no fortalecimento ou criação
-          da suas marca.
-        </Paragraph>
+          da sua marca.
+        </Title>
         <JellyfishImg />
       </Main>
       <Container>
+        <TitleLearnMore>Identidade Visual</TitleLearnMore>
         <LearnMore 
           color="#1e304e"
-          title="Identidade Visual"
+          // title="Identidade Visual"
           description="Uma boa marca possui uma logo que seja fácil de ser reconhecida 
           e de ser aplicada. porém, não é somente a logo que identifica uma 
           empresa para o cliente. Ter uma identidade visual estratégica faz 

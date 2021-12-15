@@ -9,6 +9,10 @@ export const Background = styled.div`
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (max-width: 1024px) {
+    height: auto;
+  }
 `;
 
 export const Title = styled.h1`
@@ -16,6 +20,12 @@ export const Title = styled.h1`
   text-align: center;
   color: #fff;
   font-size: 2rem;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 2.5rem;
+    text-align: start;
+    margin: 15% 5% 5%;
+  }
 `;
 
 export const Container = styled.div`
@@ -23,4 +33,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+  }
 `;
