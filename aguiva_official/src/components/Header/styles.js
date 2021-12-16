@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import backgroundWave from '../../assets/images/wave.svg';
+import backgroundWave from '../../assets/images/background-wave.jpg';
 
 export const Wrapper = styled.div`
   width: 100%;

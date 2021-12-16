@@ -1,18 +1,19 @@
 import React from 'react'
-import { Background, Title, YellowBar, Button } from './styles';
+import { Background, Title, YellowBar, ContainerButton, Link } from './styles';
+// import Systems from '../Systems';
+// import VisualId from '../VisualId';
 
-function Question() {
+const Question = () => {
   return (
     <Background>
       <Title>
         VOCÊ POSSUI <br/> UMA MARCA <br/> FORTE?
       </Title>
       <YellowBar />
-      {/* div para separar o 'flex-direction: collumm' de Background */}
-      <div>   
-        <Button> SIM </Button>
-        <Button> NÃO </Button>
-      </div>
+      <ContainerButton>   
+        <Link href="#systems"> SIM </Link>
+        <Link href="#visualId"> NÃO </Link>
+      </ContainerButton>
     </Background>
   )
 }

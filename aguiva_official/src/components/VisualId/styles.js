@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import BackgroundJellyfish from '../../assets/images/Background-Design.svg';
-import JellyfishGray from '../../assets/images/aguaviva-design.svg';
+import BackgroundJellyfish from '../../assets/images/background-visualid.jpg';
+import JellyfishGray from '../../assets/images/aguaviva.svg';
 
-export const Background = styled.div`
+export const Section = styled.section`
   width: 100%;
   height: 110vh;
   background-image: url(${BackgroundJellyfish});
@@ -14,6 +14,7 @@ export const Background = styled.div`
 
   @media screen and (max-width: 1024px) {
     /* background-size: ; */
+    height: 120vh;
   }
 
 `;
@@ -47,8 +48,8 @@ export const Title = styled.h2`
 
 export const JellyfishImg = styled.div`
   flex: 1;
-  height: 80%;
-  margin-right: 95px;
+  height: 75%;
+  margin-right: 100px;
   z-index: 1;
   background-image: url(${JellyfishGray});
   background-size: cover;
@@ -57,9 +58,9 @@ export const JellyfishImg = styled.div`
 
   @media screen and (max-width: 1024px) {
     position: relative;
-    top: -7%;
     margin: 0;
-    width: 69vw;
+    width: 60%;
+    background-size: contain;
   }
 `;
 
@@ -67,7 +68,7 @@ export const Container = styled.div`
   margin-top: 10px;
   display: flex;
   flex-direction: row;
-  flex: 1;
+  margin-bottom: 5%;
 
   @media screen and (max-width: 1024px) {
     flex-wrap: wrap-reverse;
@@ -80,11 +81,22 @@ export const TitleLearnMore = styled.h1`
 `;
 
 export const Partners = styled.div`
+  flex: 1;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
+  justify-items: center;
 
   img {
-    height: 60px;
-    width: 100%;
-  }  
+    height: 100%;
+    width: 70%;
+    display: flex;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    grid-column-gap: 10px;
+
+    img {
+      width: 85%;
+    }
+  }
 `;

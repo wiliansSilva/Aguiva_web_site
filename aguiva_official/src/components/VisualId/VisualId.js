@@ -1,17 +1,17 @@
 import React from 'react'
 import LearnMore from '../LearnMore/LearnMore';
-import { Background, Main, Title, JellyfishImg, Container, TitleLearnMore, Partners } from './styles';
+import { Section, Main, Title, JellyfishImg, Container, TitleLearnMore, Partners } from './styles';
 
-import ChicagoLogo from '../../assets/images/Chicago-logo.svg';
-import CaldeiraLogo from '../../assets/images/Caldeira-logo.svg';
-import MutuaLogo from '../../assets/images/Mutua-logo.svg';
-import SkemLogo from '../../assets/images/Skem-logo.svg';
-import WilliamLogo from '../../assets/images/William-logo.svg';
-import RaquelLogo from '../../assets/images/Raquel-logo.svg';
+import ChicagoLogo from '../../assets/images/logo_chicago.svg';
+import CaldeiraLogo from '../../assets/images/logo_gilberto_caldeira.svg';
+import MutuaLogo from '../../assets/images/logo_mutua.svg';
+import SkemLogo from '../../assets/images/logo_skem.svg';
+import WilliamLogo from '../../assets/images/logo_william.svg';
+import RaquelLogo from '../../assets/images/logo_raquel.svg';
 
-function VisualId() {
+const VisualId = () => {
   return (
-    <Background>
+    <Section id="visualId">
       <Main>
         <Title>
           Queremos te apresentar alguns dos nossos serviços 
@@ -21,10 +21,10 @@ function VisualId() {
         <JellyfishImg />
       </Main>
       <Container>
-        <TitleLearnMore>Identidade Visual</TitleLearnMore>
+        {/* <TitleLearnMore>Identidade Visual</TitleLearnMore> */}
         <LearnMore 
           color="#1e304e"
-          // title="Identidade Visual"
+          title="Identidade Visual"
           description="Uma boa marca possui uma logo que seja fácil de ser reconhecida 
           e de ser aplicada. porém, não é somente a logo que identifica uma 
           empresa para o cliente. Ter uma identidade visual estratégica faz 
@@ -40,9 +40,8 @@ function VisualId() {
           <img src={RaquelLogo} alt='Raquel Krause' />
         </Partners>
       </Container>
-    </Background>
+    </Section>
   )
 }
-
 
 export default VisualId;

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Wrapper, Title, Description, Link } from './styles';
+import { Wrapper, Title, Description, Link, ArrowLink } from './styles';
 
-function LearnMore(props) {
+const LearnMore = (props) => {
   const { color, side, title, description, link } = props;
 
   return (
@@ -10,7 +10,10 @@ function LearnMore(props) {
       <Description>
         {description}
       </Description>
-      <Link href={link}>Saiba mais</Link>
+      <Link href={link} color={color}> 
+        Saiba mais 
+        <ArrowLink />
+      </Link>
     </Wrapper>
   )
 }

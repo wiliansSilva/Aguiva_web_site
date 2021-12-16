@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { VscArrowRight } from 'react-icons/vsc';
 
 export const Wrapper = styled.div `
   color: ${props => props.color};
@@ -34,9 +35,15 @@ export const Description = styled.p`
 `;
 
 export const Link = styled.a`
+  color: ${props => props.color};
   font-size: 1.3rem;
+  width: fit-content;
   
   @media screen and (max-width: 1024px) {
     font-size: 1.5rem;
   }
+`;
+
+export const ArrowLink = styled(VscArrowRight)`
+  margin-left: 5px;
 `;

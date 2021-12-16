@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import BackgroundBlue from '../../assets/images/Background-sistemas.svg';
+import BackgroundBlue from '../../assets/images/background-systems.jpg';
 
 
-export const Background = styled.div`
+export const Section = styled.section`
   width: 100%;
   height: 150vh;
   background-image: url(${BackgroundBlue});
@@ -12,6 +12,7 @@ export const Background = styled.div`
 
   @media screen and (max-width: 1024px) {
     height: auto;
+    padding-bottom: 10%;
   }
 `;
 
@@ -29,14 +30,14 @@ export const Title = styled.h1`
 `;
 
 export const Container = styled.div`
-  height: 90%;
+  height: 89%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   @media screen and (max-width: 1024px) {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: start;
   }
 `;

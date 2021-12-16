@@ -44,8 +44,12 @@ export const YellowBar = styled.div`
   }
 `;
 
-export const Button = styled.button`
-  width: 120px;
+export const ContainerButton = styled.div`
+  display: flex;
+`;
+
+export const Link = styled.a`
+  width: 80px;
   padding: 1rem;
   background-color: #182451;
   color: #ffffff;

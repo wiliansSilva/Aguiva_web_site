@@ -1,6 +1,6 @@
 import React from 'react';
 import LearnMore from '../LearnMore/LearnMore';
-import { Background, Title, Container } from './styles';
+import { Section, Title, Container } from './styles';
 
 const data = [
   {
@@ -23,9 +23,9 @@ const data = [
   }
 ];
 
-function Systems() {
+const Systems = () => {
   return (
-    <Background>
+    <Section id="systems">
       <Title>Agora está na hora de colocar a sua empresa nos mares digitais</Title>
       <Container>
         {
@@ -40,7 +40,7 @@ function Systems() {
           )
         }
       </Container>
-    </Background>
+    </Section>
   )
 };
 
