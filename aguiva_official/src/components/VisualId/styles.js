@@ -71,7 +71,7 @@ export const Container = styled.div`
   margin-bottom: 5%;
 
   @media screen and (max-width: 1024px) {
-    flex-wrap: wrap-reverse;
+    flex-direction: column-reverse;
   }
 
 `;

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Wrapper, MenuBurger, CloseMenu, Menu, MenuContainer, Link } from './styles';
-import logoImg from '../../assets/images/aguiva.svg';
+import LogoImg from '../../assets/images/aguiva.svg';
 
 const NavBar = () => {
 
@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <Wrapper>
       {/* <Logo /> */}
-      <img src={logoImg} alt="Aguiva" width="150px" />
+      <img src={LogoImg} alt="Aguiva" width="150px" />
      
       {!isOpened && <MenuBurger onClick={() => setIsOpened(true)} />}
       {isOpened && <CloseMenu onClick={() => setIsOpened(false)}/>} 

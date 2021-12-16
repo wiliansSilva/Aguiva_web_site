@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import BackgroundBlue from '../../assets/images/background-systems.jpg';
-
+import LaptopImg from '../../assets/images/note1.png';
 
 export const Section = styled.section`
   width: 100%;
@@ -9,6 +9,7 @@ export const Section = styled.section`
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
+  /* background-position: ; */
 
   @media screen and (max-width: 1024px) {
     height: auto;
@@ -40,4 +41,26 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: start;
   }
+`;
+
+export const LaptopContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    flex: 1;
+    flex-direction: column;
+    
+  }
+`;
+
+export const Laptop = styled.div`
+  background-image: url(${LaptopImg});
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  margin-right: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
 `;

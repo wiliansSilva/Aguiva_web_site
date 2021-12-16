@@ -7,11 +7,13 @@ export const Wrapper = styled.div `
   margin-left: 60px;
   margin-right: 60px;
   text-align: ${props => props.side};
+  align-self: ${props=> props.alignSelf};
 
   @media screen and (max-width: 1024px) {
     margin: 5%;
     width: 90vw;
     text-align: left;
+    align-self: flex-start;
   } 
 `;
 
