@@ -24,6 +24,8 @@ const VisualId = () => {
         {/* <TitleLearnMore>Identidade Visual</TitleLearnMore> */}
         <LearnMore 
           color="#1e304e"
+          side="left"
+          alignSelf="flex-start"
           title="Identidade Visual"
           description="Uma boa marca possui uma logo que seja fácil de ser reconhecida 
           e de ser aplicada. porém, não é somente a logo que identifica uma 

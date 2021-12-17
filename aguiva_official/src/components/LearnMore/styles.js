@@ -3,18 +3,21 @@ import { VscArrowRight } from 'react-icons/vsc';
 
 export const Wrapper = styled.div `
   color: ${props => props.color};
-  width: 50vw; 
+  max-width: 70ch;
   margin-left: 60px;
   margin-right: 60px;
   text-align: ${props => props.side};
   align-self: ${props=> props.alignSelf};
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 790px) {
+    align-self: ${props=> props.alignSelf};
+  }
+  
+  @media screen and (max-width: 650px) {
     margin: 5%;
-    width: 90vw;
     text-align: left;
     align-self: flex-start;
-  } 
+  }
 `;
 
 export const Title = styled.h1`
@@ -32,7 +35,7 @@ export const Description = styled.p`
   font-weight: 500;
 
   @media screen and (max-width: 1024px) {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 `;
 
@@ -42,7 +45,7 @@ export const Link = styled.a`
   width: fit-content;
   
   @media screen and (max-width: 1024px) {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 `;
 
