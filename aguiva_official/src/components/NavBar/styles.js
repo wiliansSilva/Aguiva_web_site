@@ -6,8 +6,20 @@ export const Wrapper = styled.nav`
   background-color: #010f40;
   padding: 0.5rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Margin = styled.div`
+  max-width: 1320px;
+  width: 100%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
+`;
+
+export const Logo = styled.img`
+  width: 150px;
 `;
 
 export const MenuBurger = styled(VscMenu)`

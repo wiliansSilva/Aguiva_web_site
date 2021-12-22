@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import BackgroundJellyfish from '../../assets/images/background-visualid.jpg';
-import JellyfishGray from '../../assets/images/aguaviva.svg';
 
 export const Section = styled.section`
   width: 100%;
@@ -11,12 +10,15 @@ export const Section = styled.section`
   background-size: cover;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
-  @media screen and (max-width: 650px) {
-    /* background-size: ; */
-    height: 120vh;
+  @media screen and (max-width: 790px) {
+    height: 130vh;
   }
+`;
 
+export const Margin = styled.div`
+  max-width: 1320px;
 `;
 
 export const Main = styled.main`
@@ -25,7 +27,7 @@ export const Main = styled.main`
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 790px) {
     flex-direction: column;
   }
 `;
@@ -33,37 +35,37 @@ export const Main = styled.main`
 export const Title = styled.h2`
   width: 60vw;
   max-width: 70ch;
-  margin-left: 150px;
+  margin-left: 10%;
   font-size: 1.8rem;
   font-weight: 600;
   color: #1e304e;
   z-index: 10;
 
   @media screen and (max-width: 1024px) {
-    margin: 15% 10% 0;
     width: auto;
     font-size: 2.4rem;
   }
 
+  @media screen and (max-width: 790px) {
+    margin: 15% 10% 0;
+  }
 `; 
 
-export const JellyfishImg = styled.div`
+export const JellyfishImg = styled.img`
   flex: 1;
-  max-width: 600px;
   height: 75%;
   margin-right: 5%;
-  z-index: 1;
-  background-image: url(${JellyfishGray});
-  background-size: cover;
-  background-repeat: no-repeat;
 
-
-  @media screen and (max-width: 650px) {
-    position: relative;
-    margin: 0;
-    width: 60%;
-    background-size: contain;
+  @media screen and (max-width: 1024px) {
+    height: 50%;
+    margin-right: 7%;
   }
+
+  @media screen and (max-width: 790px) {
+    width: 40%;
+    margin-right: 0;
+  }
+    
 `;
 
 export const Container = styled.div`

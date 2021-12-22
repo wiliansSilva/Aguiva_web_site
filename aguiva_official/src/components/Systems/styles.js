@@ -1,20 +1,26 @@
 import styled from "styled-components";
 import BackgroundBlue from '../../assets/images/background-systems.jpg';
-import LaptopImg from '../../assets/images/note1.png';
 
 export const Section = styled.section`
   width: 100%;
-  height: 150vh;
+  height: 140vh;
   background-image: url(${BackgroundBlue});
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: ; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media screen and (max-width: 1024px) {
-    height: auto;
     padding-bottom: 10%;
   }
+`;
+
+export const Margin = styled.div`
+  max-width: 1320px;
+  width: 84%;
+  height: 100%;
 `;
 
 export const Title = styled.h1`
@@ -22,8 +28,12 @@ export const Title = styled.h1`
   text-align: center;
   color: #fff;
   font-size: 2rem;
-
+ 
   @media screen and (max-width: 1024px) {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (max-width: 650px) {
     font-size: 2.5rem;
     text-align: start;
     margin: 15% 5% 5%;
@@ -31,7 +41,7 @@ export const Title = styled.h1`
 `;
 
 export const Container = styled.div`
-  height: 89%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -44,8 +54,8 @@ export const Container = styled.div`
 `;
 
 export const LaptopContainer = styled.div`
+  height: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
   @media screen and (max-width: 1024px) {
@@ -55,12 +65,19 @@ export const LaptopContainer = styled.div`
   }
 `;
 
-export const Laptop = styled.div`
-  background-image: url(${LaptopImg});
+export const Laptop = styled.img`
   flex: 1;
-  height: 100%;
-  width: 100%;
-  margin-right: 100px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 50%;
+  height: 50%;
 `;
+
+
+// export const Laptop = styled.div`
+//   background-image: url(${LaptopImg});
+//   flex: 1;
+//   height: 100%;
+//   width: 100%;
+//   margin-right: 100px;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// `;

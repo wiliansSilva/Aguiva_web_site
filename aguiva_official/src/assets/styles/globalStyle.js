@@ -14,6 +14,10 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
+  .app {
+    background-color: #010f40;
+  }
+
   @media screen and (max-width: 1024px) {
     html, body {
       font-size: 10px;
