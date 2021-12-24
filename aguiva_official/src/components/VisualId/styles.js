@@ -13,12 +13,21 @@ export const Section = styled.section`
   align-items: center;
 
   @media screen and (max-width: 790px) {
-    height: 130vh;
+    height: 135vh;
   }
+
+  @media screen and (max-width: 425px) {
+    height: 145vh;
+  }
+
+  /* @media screen and (max-height: 699px) {
+    height: 160vh;
+  } */
 `;
 
 export const Margin = styled.div`
   max-width: 1320px;
+  height: 100%;
 `;
 
 export const Main = styled.main`
@@ -69,11 +78,11 @@ export const JellyfishImg = styled.img`
 `;
 
 export const Container = styled.div`
-  margin-top: 10px;
+  /* margin-top: 10px; */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-bottom: 5%;
+  /* margin-bottom: 5%; */
 
   @media screen and (max-width: 790px) {
     flex-direction: column-reverse;
@@ -83,7 +92,15 @@ export const Container = styled.div`
 `;
 
 export const TitleLearnMore = styled.h1`
-  
+  display: none;
+
+  @media screen and (max-width: 790px) {
+    display: flex;
+    color: #1e304e;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
 `;
 
 export const Partners = styled.div`
@@ -96,6 +113,7 @@ export const Partners = styled.div`
   img {
     height: 100%;
     width: 70%;
+    min-width: 130px;
     display: flex;
   }
   
@@ -104,6 +122,7 @@ export const Partners = styled.div`
 
     img {
       width: 85%;
+      min-width: 150px;
     }
   }
 `;

@@ -3,7 +3,7 @@ import BackgroundBlue from '../../assets/images/background-systems.jpg';
 
 export const Section = styled.section`
   width: 100%;
-  height: 140vh;
+  height: 155vh;
   background-image: url(${BackgroundBlue});
   overflow: hidden;
   background-repeat: no-repeat;
@@ -12,15 +12,27 @@ export const Section = styled.section`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (max-width: 1024px) {
-    padding-bottom: 10%;
+  @media screen and (max-width: 790px) {
+    height: 135vh;
   }
+
+  @media screen and (max-width: 425px) {
+    height: 150vh;
+  }
+
+  /* @media screen and (max-width: 800px) and (max-height: 500px) {
+    height: 180vh;
+  } */
 `;
 
 export const Margin = styled.div`
   max-width: 1320px;
   width: 84%;
-  height: 100%;
+  height: 85%;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const Title = styled.h1`
@@ -31,6 +43,7 @@ export const Title = styled.h1`
  
   @media screen and (max-width: 1024px) {
     font-size: 2.5rem;
+    margin: 50px 5% 5%;
   }
 
   @media screen and (max-width: 650px) {
@@ -54,9 +67,10 @@ export const Container = styled.div`
 `;
 
 export const LaptopContainer = styled.div`
-  height: 100%;
+  height: 40vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   @media screen and (max-width: 1024px) {
     flex: 1;
@@ -67,8 +81,9 @@ export const LaptopContainer = styled.div`
 
 export const Laptop = styled.img`
   flex: 1;
-  width: 50%;
-  height: 50%;
+  width: 32%;
+  height: 85%;
+  margin-right: 5%;
 `;
 
 

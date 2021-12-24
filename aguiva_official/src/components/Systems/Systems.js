@@ -1,7 +1,7 @@
 import React from 'react';
 import LearnMore from '../LearnMore/LearnMore';
 import { Section, Margin, Title, Container, LaptopContainer, Laptop } from './styles';
-import LaptopImg from '../../assets/images/note1.png';
+import LaptopImg from '../../assets/images/note.png';
 
 const Systems = () => {
   return (
@@ -11,6 +11,7 @@ const Systems = () => {
         <Container>  
           <LearnMore 
             color="#fff"
+            display="false"
             side="left"
             alignSelf="flex-start"
             title="SITE"
@@ -25,7 +26,7 @@ const Systems = () => {
             description="Uma boa marca possui uma logo que seja fácil de ser reconhecida e de ser aplicada. Porém, não é somente a logo que identifica uma empresa para o cliente. Ter uma identidade visual estratégica faz toda a diferença para se posicionar corretamente no mercado e conviver com concorrentes."
             link="#"
           />
-          {/* <LaptopContainer> */}
+          <LaptopContainer>
             <LearnMore 
               color="#fff"
               side="left"
@@ -33,11 +34,9 @@ const Systems = () => {
               title="SISTEMA"
               description="Só estar nas redes sociais não é o suficiente. Esta é a verdade. É preciso produzir conteúdo de relevância e que se comunique com o público consumidor. É preciso ter estratégia para saber o que e como fazer."
               link="#"
-            >
-              <Laptop src={LaptopImg} />
-
-            </LearnMore>
-          {/* </LaptopContainer> */}
+            />
+            <Laptop src={LaptopImg} />
+          </LaptopContainer>
         </Container>
       </Margin>
     </Section>

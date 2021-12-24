@@ -12,7 +12,7 @@ import RaquelLogo from '../../assets/images/logo_raquel.svg';
 
 const VisualId = () => {
   return (
-    <Section id="visualId">
+    <Section id="visualId" >
       <Margin>
         <Main>
           <Title>
@@ -23,11 +23,12 @@ const VisualId = () => {
           <JellyfishImg src={JellyfishGray} />
         </Main>
         <Container>
-          {/* <TitleLearnMore>Identidade Visual</TitleLearnMore> */}
-          <LearnMore 
+          <LearnMore
+            name="visualId"
             color="#1e304e"
             side="left"
             alignSelf="flex-start"
+            display="none"
             title="Identidade Visual"
             description="Uma boa marca possui uma logo que seja fácil de ser reconhecida 
             e de ser aplicada. porém, não é somente a logo que identifica uma 
@@ -43,6 +44,7 @@ const VisualId = () => {
             <img src={WilliamLogo} alt='William Viegas' />
             <img src={RaquelLogo} alt='Raquel Krause' />
           </Partners>
+          <TitleLearnMore>Identidade Visual</TitleLearnMore>
         </Container>
       </Margin>
     </Section>
