@@ -2,26 +2,15 @@ import styled from 'styled-components';
 import LogoImg from '../../assets/images/aguiva.svg';
 
 export const Background = styled.footer`
-  height: 10vh;
-  background-color: #2f2f2f;
-
-  @media screen and (max-width: 1024px) {
-    height: 15vh;
-  }
-`;
-
-export const Container = styled.div`
-  height: 50%;
   background-color: #182451;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media screen and (max-width: 1024px) {
-    height: 100%;
     flex-direction: column;
     justify-content: space-around;
-    padding-bottom: 1vh;
+    padding: 1vh;
   }
 `;
 

@@ -8,16 +8,9 @@ export const Wrapper = styled.div`
   text-align: ${props => props.side};
   align-self: ${props => props.alignSelf};
 
-  &.visualId {
-    margin: 0 60px 60px 60px ;
-  }
 
   @media screen and (max-width: 790px) {
     margin: 5%;
-
-    &.visualId {
-      align-self: center;
-    }
   }
   
   @media screen and (max-width: 650px) {

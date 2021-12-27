@@ -3,7 +3,7 @@ import BackgroundJellyfish from '../../assets/images/background-visualid.jpg';
 
 export const Section = styled.section`
   width: 100%;
-  height: 110vh;
+  padding-bottom: 20px;
   background-image: url(${BackgroundJellyfish});
   overflow: hidden;
   background-repeat: no-repeat;
@@ -13,21 +13,12 @@ export const Section = styled.section`
   align-items: center;
 
   @media screen and (max-width: 790px) {
-    height: 135vh;
+    padding-bottom: 10px;
   }
-
-  @media screen and (max-width: 425px) {
-    height: 145vh;
-  }
-
-  /* @media screen and (max-height: 699px) {
-    height: 160vh;
-  } */
 `;
 
 export const Margin = styled.div`
   max-width: 1320px;
-  height: 100%;
 `;
 
 export const Main = styled.main`
@@ -38,6 +29,7 @@ export const Main = styled.main`
 
   @media screen and (max-width: 790px) {
     flex-direction: column;
+    height: auto;
   }
 `;
 
@@ -122,7 +114,7 @@ export const Partners = styled.div`
 
     img {
       width: 85%;
-      min-width: 150px;
+      min-width: 145px;
     }
   }
 `;

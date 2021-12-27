@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { VscClose, VscMenu } from "react-icons/vsc";
 
 export const Wrapper = styled.nav`
-  height: 6vh;
+  height: auto;
   background-color: #010f40;
   padding: 0.5rem;
   display: flex;
