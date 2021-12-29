@@ -17,11 +17,11 @@ export const Margin = styled.div`
   height: 90vh;
 
   @media screen and (max-width: 1024px) {
-    height: 60vh;
+    height: 70vh;
   }
 
   @media screen and (max-width: 790px) {
-    height: 40vh;
+    height: 50vh;
   }
 `;
 

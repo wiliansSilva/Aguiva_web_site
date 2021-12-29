@@ -52,11 +52,10 @@ export const Link = styled.a`
   width: 135px;
   display: inline-flex;
   align-items: center;
-  
+
   &:hover .Arrow {
     margin-left: 9px;
     color: #cab710;
-    transition: .2s;
   }
 
   @media screen and (max-width: 1024px) {
@@ -66,4 +65,5 @@ export const Link = styled.a`
 
 export const ArrowLink = styled(VscArrowRight)`
   margin-left: 5px;
+  transition: all .2s ease;
 `;

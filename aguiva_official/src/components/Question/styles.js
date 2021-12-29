@@ -14,14 +14,13 @@ export const Background = styled.div`
   @media screen and (max-width: 1024px) {
     height: 40vh;
     background-color: #182451;
-
   }
 `;
 
 export const Title = styled.h2`
   color: #fff;
   font-size: 2rem;
-  z-index: 10;
+  z-index: 1;
 
   @media screen and (max-width: 1024px) {
     font-size: 2.5rem;
@@ -35,7 +34,6 @@ export const YellowBar = styled.div`
   top: -85px;
   left: 8px;
   background-color: #cab710;
-  z-index: 1;
 
   @media screen and (max-width: 1024px) {
     width: 150px;
@@ -58,11 +56,11 @@ export const Link = styled.a`
   font-weight: bold;
   align-items: center;
   cursor: pointer;
+  transition: all .5s ease;
 
   &:hover {
     /* background-color: #273a81; */
     background-color: #cab710;
     border-radius: 20px;
-    transition: 0.5s;
   }
 `;

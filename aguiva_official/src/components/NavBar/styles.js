@@ -22,58 +22,90 @@ export const Logo = styled.img`
   width: 150px;
 `;
 
+export const MobileIcon = styled.div`
+  position: absolute;
+  right: 0;
+  top: -5px;
+  transform: translate(-100%, 60%); 
+  font-size: 2rem;
+  margin-right: .5rem;
+  display: flex;
+  cursor: pointer;
+
+  @media screen and (max-width: 1024px) {
+    position: static;
+    transform: none;
+    font-size: 3.5rem;
+  }
+`;
+
 export const MenuBurger = styled(VscMenu)`
   color: #fff;
-  width: 40px;
-  height: 80%;
-  margin-right: 0.5rem;
-  z-index: 999;
-  cursor: pointer;
 `;
 
 export const CloseMenu = styled(VscClose)`
   color: #fff;
-  width: 40px;
-  height: 6vh;
-  margin-right: 0.5rem;
-  z-index: 999;
-  cursor: pointer;
 `;
 
-export const Menu = styled.div`
-  display: flex;
-  z-index: 99;
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 25%;
-  background-color: #010f41;
-
-  @media screen and (max-width: 1024px) {
-    width: 100%;
-  }
-`;
-
-export const MenuContainer = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  padding: 0.5rem;
+export const NavMenu = styled.ul`
+  position: absolute;
+  width: 30%;
+  height: 91vh;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  list-style: none;
+  text-align: center;
+  top: 55px;
+  right: ${({isOpened}) => (isOpened ? 0 : '-100%')};
+  opacity: 1;
+  transition: all .5s ease;
+  background: #010f40;
+  z-index: 99;
+  
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    height: 100vh;
+    top: 50px;
+  }
 `;
 
-export const Link = styled.a`
-  color: #fff;
-  margin: 20px;
-  font-size: 2rem;
+export const NavItem = styled.li`
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 
-  @media screen and (max-width: 1024px) {
-    font-size: 4rem;
+  /* para o menu desktop */
+  /* border-bottom: 2px solid transparent; */
+
+  &:hover {
+    /* border-bottom: 2px solid #27409b; */
   }
+`;
+
+export const NavLink = styled.a`
+  color: #fff;
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 4rem;
+  background: #182451;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .3s ease;
+
+  &:hover {
+    /* background: #27409b; */
+    background: #cab710;
+    border-radius: 32px;
+  }
+//   @media screen and (max-width: 1024px) {
+//     font-size: 4rem;
+//   }
 `;
 
 

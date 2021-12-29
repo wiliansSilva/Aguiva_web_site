@@ -9,7 +9,6 @@ const LearnMore = (props) => {
       <Title className={name} >{title}</Title>
       <Description>
         {description}
-
       </Description>
       <Link href={link} color={color}> 
         Saiba mais 
