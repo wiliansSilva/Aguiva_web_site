@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { VscClose, VscMenu } from "react-icons/vsc";
+import LogoImg from '../../assets/images/aguiva.svg';
+
 
 export const Wrapper = styled.nav`
   height: auto;
@@ -18,8 +20,12 @@ export const Margin = styled.div`
   align-items: center;
 `;
 
-export const Logo = styled.img`
+export const Logo = styled.a`
+  background: url(${LogoImg});
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 150px;
+  height: 40px;
 `;
 
 export const MobileIcon = styled.div`

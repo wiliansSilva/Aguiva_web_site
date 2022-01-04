@@ -10,7 +10,6 @@ import {
   NavItem, 
   NavLink
 } from './styles';
-import LogoImg from '../../assets/images/aguiva.svg';
 
 const NavBar = () => {
   const [isOpened, setIsOpened] = useState(false)
@@ -20,7 +19,7 @@ const NavBar = () => {
   return (
     <Wrapper>
       <Margin>
-        <Logo src={LogoImg} alt="Aguiva" />
+        <Logo href="#" alt="Aguiva" />
       
         <MobileIcon onClick={changeOpened}>
           {isOpened ? <CloseMenu /> : <MenuBurger />}
