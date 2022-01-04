@@ -3,6 +3,7 @@ import LogoImg from '../../assets/images/aguiva.svg';
 
 export const Background = styled.footer`
   background-color: #182451;
+  padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,7 +11,7 @@ export const Background = styled.footer`
   @media screen and (max-width: 1024px) {
     flex-direction: column;
     justify-content: space-around;
-    padding: 1vh;
+    padding: 10px;
   }
 `;
 
@@ -35,8 +36,8 @@ export const Logo = styled.div`
   background-position: center;
 
   @media screen and (max-width: 1024px) {
-    width: 110px;
-    margin: 5px 0;
+    width: 150px;
+    margin: 18px 0;
   }
 `;
 

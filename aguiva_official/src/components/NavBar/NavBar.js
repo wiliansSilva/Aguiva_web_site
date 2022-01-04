@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { 
+import {
   Wrapper, 
   Margin, 
   Logo, 
@@ -26,10 +26,10 @@ const NavBar = () => {
           {isOpened ? <CloseMenu /> : <MenuBurger />}
         </MobileIcon>
 
-        <NavMenu onClick={changeOpened} isOpened={isOpened}>
+        <NavMenu isOpened={isOpened} >
           <NavItem>
-            <NavLink>VisualId</NavLink>
-            <NavLink>Systems</NavLink>
+            <NavLink onClick={changeOpened}> VisualId </NavLink>
+            <NavLink onClick={changeOpened}> Systems </NavLink>
           </NavItem>
         </NavMenu>
 

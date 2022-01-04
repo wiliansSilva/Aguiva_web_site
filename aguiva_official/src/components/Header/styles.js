@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import backgroundWave from '../../assets/images/background-wave.jpg';
+import backgroundWave from '../../assets/images/bg-wave.svg';
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: center;
   display: flex;
   justify-content: center;
 `;
@@ -14,15 +15,7 @@ export const Wrapper = styled.div`
 export const Margin = styled.div`
   max-width: 1300px;
   width: 100%;
-  height: 90vh;
-
-  @media screen and (max-width: 1024px) {
-    height: 70vh;
-  }
-
-  @media screen and (max-width: 790px) {
-    height: 50vh;
-  }
+  height: 92vh;
 `;
 
 export const Title = styled.h1`
@@ -37,8 +30,7 @@ export const Title = styled.h1`
   font-size: 3.7rem;
 
   @media screen and (max-width: 790px) {
-    margin-left: 5%;
-    width: 100%;
-    font-size: 3rem;
+    margin: 0 5%;
+    font-size: 3.1rem;
   }
 `;

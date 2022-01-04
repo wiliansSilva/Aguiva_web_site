@@ -17,7 +17,6 @@ export const Wrapper = styled.div`
     text-align: left;
     align-self: flex-start;
   }
-  
 `;
 
 export const Title = styled.h1`
@@ -42,15 +41,18 @@ export const Description = styled.p`
   font-weight: 500;
 
   @media screen and (max-width: 1024px) {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    font-weight: 200;
   }
 `;
 
 export const Link = styled.a`
+  display: none;
+
   color: ${props => props.color};
   font-size: 1.3rem;
   width: 135px;
-  display: inline-flex;
+  /* display: inline-flex; */
   align-items: center;
 
   &:hover .Arrow {

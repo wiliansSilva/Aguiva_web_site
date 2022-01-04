@@ -13,6 +13,7 @@ export const Background = styled.div`
 
   @media screen and (max-width: 1024px) {
     height: 40vh;
+    padding: 15px 0;
     background-color: #182451;
   }
 `;

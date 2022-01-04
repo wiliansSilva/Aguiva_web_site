@@ -1,21 +1,19 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700;800&display=swap');
 
-  body {
+  html, body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   a{
     text-decoration: none;
-  }
-
-  .app {
-    background-color: #010f40;
   }
 
   @media screen and (max-width: 1024px) {

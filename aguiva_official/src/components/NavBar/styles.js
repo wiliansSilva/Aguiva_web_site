@@ -23,10 +23,6 @@ export const Logo = styled.img`
 `;
 
 export const MobileIcon = styled.div`
-  position: absolute;
-  right: 0;
-  top: -5px;
-  transform: translate(-100%, 60%); 
   font-size: 2rem;
   margin-right: .5rem;
   display: flex;
@@ -49,8 +45,9 @@ export const CloseMenu = styled(VscClose)`
 
 export const NavMenu = styled.ul`
   position: absolute;
+  overflow-x: hidden;
   width: 30%;
-  height: 91vh;
+  height: 92vh;
   margin: 0;
   padding: 0;
   display: flex;
@@ -59,12 +56,13 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   top: 55px;
-  right: ${({isOpened}) => (isOpened ? 0 : '-100%')};
+  right: 0;
+  transform: ${({isOpened}) => (isOpened ? 'translate(0)' : 'translate(100%)')};
   opacity: 1;
   transition: all .5s ease;
   background: #010f40;
   z-index: 99;
-  
+
   @media screen and (max-width: 1024px) {
     width: 100%;
     height: 100vh;
@@ -89,10 +87,10 @@ export const NavItem = styled.li`
 
 export const NavLink = styled.a`
   color: #fff;
-  font-size: 3rem;
+  font-size: 2rem;
   width: 100%;
+  padding: 1rem 2rem;
   text-align: center;
-  padding: 2rem 4rem;
   background: #182451;
   border-radius: 4px;
   cursor: pointer;
@@ -103,9 +101,10 @@ export const NavLink = styled.a`
     background: #cab710;
     border-radius: 32px;
   }
-//   @media screen and (max-width: 1024px) {
-//     font-size: 4rem;
-//   }
+  @media screen and (max-width: 1024px) {
+    font-size: 3rem;
+    padding: 2rem 4rem;
+  }
 `;
 
 
