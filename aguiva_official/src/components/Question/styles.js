@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-scroll';
 
 export const Background = styled.div`
   height: 70vh;
@@ -47,7 +48,7 @@ export const ContainerButton = styled.div`
   display: flex;
 `;
 
-export const Link = styled.a`
+export const LinkBtn = styled(Link)`
   width: 80px;
   padding: 1rem;
   background-color: #182451;

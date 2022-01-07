@@ -29,9 +29,12 @@ export const Logo = styled.a`
 `;
 
 export const MobileIcon = styled.div`
+
+  display: none;
+
   font-size: 2rem;
   margin-right: .5rem;
-  display: flex;
+  /* display: flex; */
   cursor: pointer;
 
   @media screen and (max-width: 1024px) {
@@ -50,13 +53,16 @@ export const CloseMenu = styled(VscClose)`
 `;
 
 export const NavMenu = styled.ul`
+
+  display: none;
+
   position: absolute;
   overflow-x: hidden;
   width: 30%;
   height: 92vh;
   margin: 0;
   padding: 0;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   list-style: none;

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Background, Title, YellowBar, ContainerButton, Link } from './styles';
+import { Background, Title, YellowBar, ContainerButton, LinkBtn } from './styles';
 // import Systems from '../Systems';
 // import VisualId from '../VisualId';
 
@@ -11,12 +11,11 @@ const Question = () => {
       </Title>
       <YellowBar />
       <ContainerButton>   
-        <Link href="#systems"> SIM </Link>
-        <Link href="#visualId"> NÃO </Link>
+        <LinkBtn to="systems" spy={true} smooth={true} offset={10} duration={500}> SIM </LinkBtn>
+        <LinkBtn to="visualId" spy={true} smooth={true} offset={10} duration={500}> NÃO </LinkBtn>
       </ContainerButton>
     </Background>
   )
 }
-
 
 export default Question;

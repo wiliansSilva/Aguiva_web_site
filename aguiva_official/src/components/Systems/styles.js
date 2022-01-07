@@ -75,8 +75,12 @@ export const Laptop = styled.img`
   align-self: flex-end;
 
   @media screen and (max-width: 1024px)  {
-    width: 67%;
+    width: 45%;
     margin: 20px 0 0;
     align-self: center;
+  }
+
+  @media screen and (max-width: 560px)  {
+    width: 60%;
   }
 `;

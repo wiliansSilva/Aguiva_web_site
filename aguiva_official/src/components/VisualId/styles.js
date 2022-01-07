@@ -20,10 +20,15 @@ export const Section = styled.section`
 
 export const Margin = styled.div`
   max-width: 1320px;
+  width: 85%;
+
+  @media screen and (max-width: 10024px) {
+    width: 100%;
+  }
 `;
 
 export const Main = styled.main`
-  height: 60vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;

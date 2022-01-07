@@ -11,12 +11,17 @@ export const Wrapper = styled.div`
 
   @media screen and (max-width: 790px) {
     margin: 5%;
+
+    &.visualId {
+      align-self: center;
+    }
   }
   
   @media screen and (max-width: 650px) {
     text-align: left;
     align-self: flex-start;
   }
+
 `;
 
 export const Title = styled.h1`
