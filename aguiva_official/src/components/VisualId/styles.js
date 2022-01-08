@@ -22,7 +22,7 @@ export const Margin = styled.div`
   max-width: 1320px;
   width: 85%;
 
-  @media screen and (max-width: 10024px) {
+  @media screen and (max-width: 1024px) {
     width: 100%;
   }
 `;
@@ -104,23 +104,28 @@ export const TitleLearnMore = styled.h1`
 export const Partners = styled.div`
   flex: 1;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   max-width: 600px;
 
   img {
     height: 100%;
-    width: 70%;
+    width: 80%;
     min-width: 130px;
     display: flex;
+    justify-self: center;
+
+    &.smaller {
+      width: 70%;
+    }
   }
   
   @media screen and (max-width: 790px) {
     grid-column-gap: 10px;
 
-    img {
-      width: 85%;
-      min-width: 145px;
+    img, &.smaller {
+      width: 0;
+      min-width: 140px;
     }
   }
 `;

@@ -40,9 +40,9 @@ const VisualId = () => {
             <img src={ChicagoLogo} alt='Chicago' />
             <img src={CaldeiraLogo} alt='Gilberto Caldeira Advogado' />
             <img src={MutuaLogo} alt='Mutua' />
-            <img src={SkemLogo} alt='Skem' />
+            <img src={SkemLogo} alt='Skem' className='smaller' />
             <img src={WilliamLogo} alt='William Viegas' />
-            <img src={RaquelLogo} alt='Raquel Krause' />
+            <img src={RaquelLogo} alt='Raquel Krause' className='smaller' />
           </Partners>
           <TitleLearnMore>Identidade Visual</TitleLearnMore>
         </Container>

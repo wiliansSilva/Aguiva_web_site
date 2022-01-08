@@ -1,13 +1,14 @@
 import styled from "styled-components";
-import backgroundWave from '../../assets/images/bg-wave.svg';
+import backgroundWave from '../../assets/images/background-wave.jpg';
 
 export const Wrapper = styled.div`
   width: 100%;
+  height: 94vh;
   background-image: url(${backgroundWave});
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: center;
+  background-position: bottom;
   display: flex;
   justify-content: center;
 `;
@@ -15,7 +16,6 @@ export const Wrapper = styled.div`
 export const Margin = styled.div`
   max-width: 1300px;
   width: 100%;
-  height: 92vh;
 `;
 
 export const Title = styled.h1`
